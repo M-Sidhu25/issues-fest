@@ -14,7 +14,7 @@ def hash_password(password):
     return hashlib.md5(password.encode()).hexdigest()
 
 # TYPO: "verfiy" instead of "verify"
-def verfiy_password(password, hash):
+def verify_password(password, hash):
     """Verify a password against a hash"""
     return hash_password(password) == hash
 
